@@ -2,9 +2,9 @@
 
 ## Project Overview
 Weak passwords are one of the most common causes of security breaches.  
-This project implements a password strength analyzer that evaluates the security level of a password and estimates how difficult it would be for an attacker to guess it.
+This project implements a **Password Strength Analyzer** that evaluates the security level of a password and estimates how difficult it would be for an attacker to guess it.
 
-The goal is to provide feedback to users so they can create stronger and more secure passwords.
+The system provides feedback to help users create stronger and more secure passwords.
 
 ---
 
@@ -13,45 +13,45 @@ The goal is to provide feedback to users so they can create stronger and more se
 - Evaluates password strength from **Very Weak to Strong**
 - Estimates password cracking difficulty
 - Detects common patterns such as:
-  - dictionary words
-  - personal information
-  - predictable character sequences
+  - Dictionary words
+  - Personal information
+  - Predictable character sequences
 - Provides suggestions for improving password security
 
 ---
 
 ## Methodology
 
-The system evaluates passwords using several techniques:
+The system evaluates passwords using several techniques.
 
 ### Pattern Detection
 Identifies predictable password patterns such as:
 
-- common dictionary words
-- repeated characters
-- keyboard sequences
+- Common dictionary words  
+- Repeated characters  
+- Keyboard sequences  
 
 ### Entropy Estimation
 Calculates password complexity based on:
 
-- length
-- character variety
-- randomness
+- Password length  
+- Character variety  
+- Randomness of characters  
 
 ### Password Guessing Estimation
-Estimates the number of guesses required to crack the password in different attack scenarios.
+Estimates the number of guesses required to crack the password under different attack scenarios.
 
 ---
 
 ## Implementation
 
-The project is implemented in Python and includes:
+The project is implemented in **Python** and includes:
 
-- password strength evaluation functions
-- pattern detection algorithms
-- password feedback generation
-
-Example usage:
+- Password strength evaluation functions  
+- Pattern detection algorithms  
+- Password feedback generation  
+---
+### Example Usage
 
 ```python
 from password_strength_analyzer import analyze_password
@@ -62,5 +62,36 @@ result = analyze_password(password)
 print(result)
 
 
+---
+## The system returns:
+
+Password strength score
+
+Estimated cracking time
+
+Suggestions to improve password security
+
+---
+## Technologies Used
+
+Python
+
+Password entropy analysis
+
+Pattern detection algorithms
+
+---
+## Future Improvements
+
+Possible improvements include:
+
+Developing a web-based password checker
+
+Integrating the analyzer into authentication systems
+
+Applying machine learning models for password prediction
+
+----
 ## Author
+
 Atharv Patil
